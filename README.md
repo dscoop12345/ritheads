@@ -224,7 +224,9 @@ nano Deploy.s.sol
 ```
 
 To change the address in this line of the Deploy script:
-   `address coordinator = 0x5FbDB2315678afecb367f032d93F642f64180aa3;` to `0x8D871Ef2826ac9001fB2e33fDD6379b6aaBF449c`
+`address coordinator = 0x5FbDB2315678afecb367f032d93F642f64180aa3;`
+to
+`0x8D871Ef2826ac9001fB2e33fDD6379b6aaBF449c`
 
 ### Deploy the contract
 
