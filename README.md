@@ -243,7 +243,8 @@ cd /infernet-container-starter/projects/hello-world/contracts/script
 CallContract.s.sol
 ```
 
-And edit it so the line `SaysGM saysGm = SaysGM(0x663F3ad617193148711d28f5334eE4Ed07016602);` to be `SaysGM saysGm = SaysGM(yourContractAddressHereBruv)`
+And edit it so this line: `SaysGM saysGm = SaysGM(0x663F3ad617193148711d28f5334eE4Ed07016602);` 
+Has your contract address: `SaysGM saysGm = SaysGM(yourContractAddressHereBruv)`
 
 OK, now call the projecT:
 
