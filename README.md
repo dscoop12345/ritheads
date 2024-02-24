@@ -253,7 +253,7 @@ Has your contract address:
 OK, now call the project:
 
 ```
-cd/infernet-container-starter
+cd /infernet-container-starter
 project=hello-world make call-contract
 ```
 
