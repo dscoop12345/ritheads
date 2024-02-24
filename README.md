@@ -1,12 +1,14 @@
 # ritheads
 
-## Get a server
+## Deploy a node
+
+### Get a server
 
 Rent the smallest bare metal server [on Latitude](https://www.latitude.sh/), "c2.small.x86," with Ubunutu installed. Costs $150/mo. Use coupon RETH400 for a rebate. 
 
 Set up ssh keys so you can access the server via mac Terminal app using [these instructions](https://docs.latitude.sh/docs/ssh).
 
-## Set up an RPC
+### Set up an RPC
 
 [Create an account with Alchemy](https://www.alchemy.com/) using your gmail or similar.
 
@@ -14,7 +16,7 @@ Create a 'new app' on Base chain.
 
 Save the https API key somewhere to use later.
 
-## Set up a fresh wallet
+### Set up a fresh wallet
 
 Create a new wallet with a new seedphrase. You will need the private key later, so save it somewhere safe.
 
@@ -26,7 +28,7 @@ Find the "registerNode" function, enter the address you just created, send tx
 
 Wait the 1hr cooldown period, then find the 'activateNode' function, send tx
 
-## Install the node
+### Install the node
 
 This is a modified version of [these instructions](https://docs.ritual.net/infernet/node/deployment) to run a single node locally. Except in our case, 'locally' means on Latitude. 
 
@@ -260,4 +262,4 @@ Some numbers should come out.
 
 Rest.
 
-Send tips for contract deployment to hunty at `0x6dd1E0028eF0a634b01E13B2291949255610b38f`
+Send tips for contract deployment guide to hunty at `0x6dd1E0028eF0a634b01E13B2291949255610b38f`
