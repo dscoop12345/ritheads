@@ -190,7 +190,8 @@ nano SaysGM.sol
 
 Change the "hello-world" line to whatever you named your container. example:
 
-```solidity
+```
+solidity
 function sayGM() public {
         _requestCompute(
             "hunty-hello",
@@ -211,7 +212,7 @@ nano Makefile
 
 You want to replace this stuff with the private key of your wallet and your RPC.
 
-```javascript
+```
 sender := 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a
 RPC_URL := http://localhost:8545
 ```
@@ -232,7 +233,8 @@ has this address instead:
 
 OK:
 
-```cd /infernet-container-starter
+```
+cd /infernet-container-starter
 project=hello-world make deploy-contracts
 ```
 
