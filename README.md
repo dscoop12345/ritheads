@@ -142,7 +142,7 @@ cd /
 git clone https://github.com/ritual-net/infernet-container-starter
 ```
 
-Then edit the config file
+Then edit the config file:
 
 ```
 cd /infernet-container-starter/projects/hello-world/container
@@ -155,10 +155,16 @@ Change and then save:
 3. the private key to your node wallet's private key
 4. the "id" of the first container to something unique. i did "hunty-hello".
 
-Now deploy it (and your node again):
+And the same thing here:
 
 ```
 cd /infernet-container-starter/deploy
+nano config.json
+```
+
+Now deploy it (and your node again):
+
+```
 docker compose pull
 docker compose up -d
 ```
