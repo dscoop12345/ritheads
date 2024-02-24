@@ -223,9 +223,9 @@ cd /infernet-container-starter/projects/hello-world/contracts/script
 nano Deploy.s.sol
 ```
 
-To change the address in this line of the Deploy script:
+And edit it so this line: 
 `address coordinator = 0x5FbDB2315678afecb367f032d93F642f64180aa3;`
-to
+has this address instead:
 `0x8D871Ef2826ac9001fB2e33fDD6379b6aaBF449c`
 
 ### Deploy the contract
@@ -243,10 +243,12 @@ cd /infernet-container-starter/projects/hello-world/contracts/script
 CallContract.s.sol
 ```
 
-And edit it so this line: `SaysGM saysGm = SaysGM(0x663F3ad617193148711d28f5334eE4Ed07016602);` 
-Has your contract address: `SaysGM saysGm = SaysGM(yourContractAddressHereBruv)`
+And edit it so this line: 
+`SaysGM saysGm = SaysGM(0x663F3ad617193148711d28f5334eE4Ed07016602);` 
+Has your contract address: 
+`SaysGM saysGm = SaysGM(yourContractAddressHereBruv)`
 
-OK, now call the projecT:
+OK, now call the project:
 
 ```
 cd/infernet-container-starter
