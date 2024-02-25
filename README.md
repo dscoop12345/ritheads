@@ -253,7 +253,9 @@ And edit it so this line:
 Has your contract address: 
 `SaysGM saysGm = SaysGM(yourContractAddressHereBruv)`
 
-OK, now call the project:
+Double check that the hello-world project and node are both running normally in `docker container ls`. Also, double-check that your node is synced by running `docker logs -f deploy-node-1`.
+
+If so, it's time to call the contract!
 
 ```
 cd /infernet-container-starter
@@ -262,7 +264,7 @@ project=hello-world make call-contract
 
 If it seems fine, do `docker logs -f deploy-node-1` in another terminal window to see if there are errors or successes.
 
-Check the basescan for your wallet, and you should have a tx showing you deployed compute. Wowie!!!!
+Check the basescan for your wallet, and you should have a tx saying you 'delivered compute'. Wowie!!!! If not, check the logs for clues what went wrong.
 
 ### Do offchain computer
 
