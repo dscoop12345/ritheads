@@ -155,7 +155,9 @@ Change and then save:
 3. the private key to your node wallet's private key
 4. the "id" of the first container to something unique. i did "hunty-hello".
 
-And the same thing here:
+Copy everything in this window and save it to paste in the next step.
+
+Go here and paste it:
 
 ```
 cd /infernet-container-starter/deploy
