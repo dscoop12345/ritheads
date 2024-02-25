@@ -243,8 +243,9 @@ project=hello-world make deploy-contracts
 This should tell you a contract address. Copy it, and then go here:
 
 ```
-cd /infernet-container-starter/projects/hello-world/contracts/script
-CallContract.s.sol
+cd /infernet-container-starter/projects/hello-world/contracts
+cd script
+nano CallContract.s.sol
 ```
 
 And edit it so this line: 
