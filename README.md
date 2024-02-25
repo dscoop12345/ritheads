@@ -263,12 +263,13 @@ Check the basescan for your wallet, and you should have a tx showing you deploye
 
 ### Do offchain computer
 
-Run this in another Terminal window on your server, using the name you chose earlier:
+Run this in another Terminal window on your server, using the name you chose earlier instead of hello-world:
 
 ```
+bash
 curl -X POST http://127.0.0.1:4000/api/jobs \
      -H "Content-Type: application/json" \
-     -d '{"containers":["hunty-hello"], "data": {"some": "input"}}'
+     -d '{"containers":["hello-world"], "data": {"some": "input"}}'
 ```
 
 Some numbers should come out.
