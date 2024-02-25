@@ -4,7 +4,7 @@
 
 ### Get a server
 
-Rent the smallest bare metal server [on Latitude](https://www.latitude.sh/), "c2.small.x86," with Ubunutu installed. Costs $150/mo. Use coupon RETH400 for a rebate. 
+Rent the smallest bare metal server [on Latitude](https://www.latitude.sh/r/5F5E543A) [thats my reflink lol pls and ty], "c2.small.x86," with Ubunutu installed. Costs $150/mo. Use coupon RETH400 for a rebate. 
 
 Set up ssh keys so you can access the server via mac Terminal app using [these instructions](https://docs.latitude.sh/docs/ssh).
 
