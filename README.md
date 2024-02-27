@@ -11,7 +11,7 @@ Set up ssh keys so you can access the server via mac Terminal app using [these i
 
 ### Set up an RPC
 
-[Create an account with Alchemy](https://www.alchemy.com/) using your gmail or similar.
+[Create an account with Alchemy](https://alchemy.com/?r=c57c652206e3703c) using your gmail or similar.
 
 Create a 'new app' on Base chain.
 
