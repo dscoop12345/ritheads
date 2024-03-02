@@ -277,5 +277,3 @@ curl -X POST http://127.0.0.1:4000/api/jobs -H "Content-Type: application/json" 
 Some numbers should come out.
 
 Rest.
-
-Send tips for contract deployment guide to hunty at `0x6dd1E0028eF0a634b01E13B2291949255610b38f`
