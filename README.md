@@ -1,39 +1,38 @@
 # Ritual Node Setup Guide
-by goodbran
 
 ## Deploy a node
 
 ### Get a server
 
-To fulfill recommended specs, rent the smallest bare metal server [on Latitude](https://www.latitude.sh/r/5F5E543A), "c2.small.x86," with Ubunutu installed. Costs $150/mo. Use coupon RETH400 for a onetime rebate. 
+To fulfill recommended specs, rent the smallest bare metal server [on Latitude](https://www.latitude.sh/r/5F5E543A), "c2.small.x86," with Ubunutu installed.  
 
 Set up ssh keys so you can access the server via mac Terminal app using [these instructions](https://docs.latitude.sh/docs/ssh).
 
 ### Set up an RPC
 
-[Create an account with Alchemy](https://alchemy.com/?r=c57c652206e3703c) using your gmail or similar.
+[Create an account with Alchemy](https://alchemy.com/?r=c57c652206e3703c) using your Gmail or similar.
 
 Create a 'new app' on Base chain.
 
-Save the https API key somewhere to use later.
+Save the full URL of the https API key somewhere to use later.
 
 ### Set up a fresh wallet
 
-Create a new wallet with a new seedphrase. You will need the private key later, so save it somewhere safe.
+Create a new wallet with a new seed phrase. You will need the private key later, so save that somewhere safe.
 
-Send this wallet 0.03 ETH on Base or more. This is to pay gas for various things.
+Send this wallet 0.03 ETH on Base or more. This is enough to pay for gas and have plenty of ETH left over.
 
-Using this wallet, go to https://basescan.org/address/0x8d871ef2826ac9001fb2e33fdd6379b6aabf449c#writeContract
+Register the wallet with Ritual by going to https://basescan.org/address/0x8d871ef2826ac9001fb2e33fdd6379b6aabf449c#writeContract
 
 Find the "registerNode" function, enter the address you just created, send tx
 
-Wait the 1hr cooldown period, then find the 'activateNode' function, send tx
+Wait 1 hour for a mandatory cooldown period, then find the 'activateNode' function, send tx
 
 ### Install the node
 
 This is a modified version of [these instructions](https://docs.ritual.net/infernet/node/deployment) to run a single node locally. Except in our case, 'locally' means on Latitude. 
 
-Using your Terminal, log onto your server. The first command is something like this, where the number is your server's IP address:
+Using your Terminal, log onto your server. The first command will be something like this, where the number is your server's IP address:
 
 ```
 ssh ubuntu@123.456.789
@@ -55,7 +54,7 @@ Then you need to create a configuration file, which uses your private key and AP
 cd /infernet-deploy/deploy
 nano config.json
 ```
-Here's the config file template. It's easier to edit on your computer then paste it in, because you need to change the RPC and private key to be yours, from the things you saved earlier. Leave the rest.
+Here's the config file template, modified for simplicity. You need to edit the `rpc_url` and `private_key` fields to match your own from the things you saved earlier. Leave the rest.
 
 ```
 {
@@ -103,12 +102,11 @@ If it looks good, then view the logs:
 
 ```docker logs -f deploy-node-1```
 
-It should be moving pretty quickly, saying "ignoring subscription creation." Scroll to the top to check for errors. If not, then you're good. Wait a few minutes, and once it hits id=2200 or so, it should change like this:
+It should be moving somewhat quickly, saying "ignoring subscription creation" while it syncs. Scroll to the top to check for errors. If not, then you're good. Wait a few minutes, and once it hits id=2300 or so, it should change like this:
 
 <img width="1132" alt="Screenshot 2024-02-24 at 2 53 14 PM" src="https://github.com/dscoop12345/ritheads/assets/95539970/1adc6fdc-cc81-43a7-b498-d63bdf28a3df">
 
-
-You can close this window at any time. You can confirm it's running by checking the Alchemy dashboard for your Base app, which should show a regular flow of successful requests. Or you can log back into your server and paste those last two commands. 
+You can close your Terminal window at any time. You can confirm the node is running by checking the Alchemy dashboard for your Base app, which should show a regular flow of successful requests. Or to be sure you can log back into your server and paste those last two commands. 
 
 ## Test the node with an on-chain request
 
